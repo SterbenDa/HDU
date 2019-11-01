@@ -1,0 +1,41 @@
+Rikka with Chess
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/65536 K (Java/Others)
+Total Submission(s): 639    Accepted Submission(s): 541
+
+
+Problem Description
+Yuta gives Rikka a chess board of size n¡Ám.
+
+As we all know, on a chess board, every cell is either black or white and every two cells that share a side have different colors.
+
+Rikka can choose any rectangle formed by board squares and perform an inversion, every white cell becomes black, and vice versa.
+
+Rikka wants to turn all cells into the same color, please tell Rikka the minimal number of inversions she need to achieve her goal.
+ 
+
+Input
+The first line contains a number T(T¡Ü10) ¡ª¡ªThe number of the testcases.
+
+Each testcase contains two numbers n,m(n¡Ü109,m¡Ü109).
+
+ 
+
+Output
+For each testcase, print a single number which represents the answer.
+ 
+
+Sample Input
+3
+1 2
+2 2
+3 3
+ 
+
+Sample Output
+1
+2
+2
+ 
+
+Source
+BestCoder Round #73 (div.2) 

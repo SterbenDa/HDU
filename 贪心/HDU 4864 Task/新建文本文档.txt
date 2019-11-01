@@ -1,0 +1,39 @@
+Task
+Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
+Total Submission(s): 5247    Accepted Submission(s): 1370
+
+
+Problem Description
+Today the company has m tasks to complete. The ith task need xi minutes to complete. Meanwhile, this task has a difficulty level yi. The machine whose level below this task¡¯s level yi cannot complete this task. If the company completes this task, they will get (500*xi+2*yi) dollars.
+The company has n machines. Each machine has a maximum working time and a level. If the time for the task is more than the maximum working time of the machine, the machine can not complete this task. Each machine can only complete a task one day. Each task can only be completed by one machine.
+The company hopes to maximize the number of the tasks which they can complete today. If there are multiple solutions, they hopes to make the money maximum.
+ 
+
+Input
+The input contains several test cases. 
+The first line contains two integers N and M. N is the number of the machines.M is the number of tasks(1 < =N <= 100000,1<=M<=100000).
+The following N lines each contains two integers xi(0<xi<1440),yi(0=<yi<=100).xi is the maximum time the machine can work.yi is the level of the machine.
+The following M lines each contains two integers xi(0<xi<1440),yi(0=<yi<=100).xi is the time we need to complete the task.yi is the level of the task.
+ 
+
+Output
+For each test case, output two integers, the maximum number of the tasks which the company can complete today and the money they will get.
+ 
+
+Sample Input
+1 2
+100 3
+100 2
+100 1
+ 
+
+Sample Output
+1 50004
+ 
+
+Author
+FZU
+ 
+
+Source
+2014 Multi-University Training Contest 1 

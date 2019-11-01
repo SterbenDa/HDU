@@ -1,0 +1,33 @@
+The sum problem
+Time Limit: 5000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
+Total Submission(s): 18727    Accepted Submission(s): 5560
+
+
+Problem Description
+Given a sequence 1,2,3,......N, your job is to calculate all the possible sub-sequences that the sum of the sub-sequence is M.
+ 
+
+Input
+Input contains multiple test cases. each case contains two integers N, M( 1 <= N, M <= 1000000000).input ends with N = M = 0.
+
+ 
+
+Output
+For each test case, print all the possible sub-sequence that its sum is M.The format is show in the sample below.print a blank line after each test case.
+
+ 
+
+Sample Input
+20 10
+50 30
+0 0
+ 
+
+Sample Output
+[1,4]
+[10,10]
+
+[4,8]
+[6,9]
+[9,11]
+[30,30]

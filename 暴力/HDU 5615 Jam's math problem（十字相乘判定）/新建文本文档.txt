@@ -1,0 +1,37 @@
+Jam's math problem
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/65536 K (Java/Others)
+Total Submission(s): 981    Accepted Submission(s): 472
+
+
+Problem Description
+Jam has a math problem. He just learned factorization.
+He is trying to factorize ax2+bx+c into the form of pqx2+(qk+mp)x+km=(px+k)(qx+m).
+He could only solve the problem in which p,q,m,k are positive numbers.
+Please help him determine whether the expression could be factorized with p,q,m,k being postive.
+ 
+
+Input
+The first line is a number T, means there are T(1¡ÜT¡Ü100) cases 
+
+Each case has one line,the line has 3 numbers a,b,c(1¡Üa,b,c¡Ü100000000) 
+
+Output
+You should output the "YES" or "NO".
+ 
+
+Sample Input
+2
+1 6 5
+1 6 4
+ 
+
+Sample Output
+YES
+NO
+
+Hint
+The first case turn $x^2+6*x+5$ into $(x+1)(x+5)$ 
+ 
+
+Source
+BestCoder Round #70 

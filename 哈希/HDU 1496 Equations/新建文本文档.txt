@@ -1,0 +1,43 @@
+Equations
+Time Limit: 6000/3000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
+Total Submission(s): 6577    Accepted Submission(s): 2647
+
+
+Problem Description
+Consider equations having the following form: 
+
+a*x1^2+b*x2^2+c*x3^2+d*x4^2=0
+a, b, c, d are integers from the interval [-50,50] and any of them cannot be 0.
+
+It is consider a solution a system ( x1,x2,x3,x4 ) that verifies the equation, xi is an integer from [-100,100] and xi != 0, any i ∈{1,2,3,4}.
+
+Determine how many solutions satisfy the given equation.
+
+ 
+
+Input
+The input consists of several test cases. Each test case consists of a single line containing the 4 coefficients a, b, c, d, separated by one or more blanks.
+End of file.
+ 
+
+Output
+For each test case, output a single line containing the number of the solutions.
+
+ 
+
+Sample Input
+1 2 3 -4
+1 1 1 1
+ 
+
+Sample Output
+39088
+0
+ 
+
+Author
+LL
+ 
+
+Source
+“2006校园文化活动月”之“校庆杯”大学生程序设计竞赛暨杭州电子科技大学第四届大学生程序设计竞赛 

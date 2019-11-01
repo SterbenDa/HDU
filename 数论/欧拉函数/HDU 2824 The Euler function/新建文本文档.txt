@@ -1,0 +1,23 @@
+The Euler function
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
+Total Submission(s): 4480    Accepted Submission(s): 1858
+
+
+Problem Description
+The Euler function phi is an important kind of function in number theory, (n) represents the amount of the numbers which are smaller than n and coprime to n, and this function has a lot of beautiful characteristics. Here comes a very easy question: suppose you are given a, b, try to calculate (a)+ (a+1)+....+ (b)
+ 
+
+Input
+There are several test cases. Each line has two integers a, b (2<a<b<3000000).
+ 
+
+Output
+Output the result of (a)+ (a+1)+....+ (b)
+ 
+
+Sample Input
+3 100
+ 
+
+Sample Output
+3042

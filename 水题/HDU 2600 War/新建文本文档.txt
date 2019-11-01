@@ -1,0 +1,41 @@
+War
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
+Total Submission(s): 2340    Accepted Submission(s): 818
+
+
+Problem Description
+      War is the reciprical and violent application of force between hostile political entities aimed at bringing about a desired political end-state via armed conflict. War is an interaction in which two or more militaries have a ¡°struggle of wills¡±. When qualified as a civil war, it is a dispute inherent to a given society, and its nature is in the conflict over modes of governance rather than sovereignty. War is not considered to be the same as mere occupation,murder or genocide because of the reciprical nature of the violent struggle, and the organized nature of the units involved. 
+      War is also a cultural entity, and its practice is not linked to any single type of political organisation or society. Rather, as discussed by John Keegan in his ¡°History Of Warfare¡±, war is a universal phenomenon whose form and scope is defined by the society that wages it.
+
+
+
+      Today we don't want to talk about war, rather than , I want you to tell me which year there was no war. 
+ 
+
+Input
+For each test case, first input one integer N(1<= N <= 100), then two integers p and q (-6000000 <= p <= q <= 6000000) represent the starting year and the ending year in this case. Followed by N wars.
+Each war described as follows:
+Ai Bi Ni (A,B is integer, p <= A, B <= q, Ni is a String which is the ith war's name )
+Represent that the ith War took place between year A and year B.
+
+ 
+
+Output
+Output one number represent which year there was no war in the range p and q, if there are not only one year, output the maximum year which there was no war. If all the year had war, just output "Badly!". 
+
+ 
+
+Sample Input
+3
+100 200
+100 120 RtWar
+110 140 WeWar
+141 199 QqWar 
+1
+-600 600
+-600 600 Cool War
+ 
+
+Sample Output
+200
+Badly!

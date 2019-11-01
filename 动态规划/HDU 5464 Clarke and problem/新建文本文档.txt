@@ -1,0 +1,39 @@
+Clarke and problem
+Time Limit 20001000 MS (JavaOthers)    Memory Limit 6553665536 K (JavaOthers)
+Total Submission(s) 400    Accepted Submission(s) 179
+
+
+Problem Description
+Clarke is a patient with multiple personality disorder. One day, Clarke turned into a student and read a book.
+Suddenly, a difficult problem appears 
+You are given a sequence of number a1,a2,...,an and a number p. Count the number of the way to choose some of number(choose none of them is also a solution) from the sequence that sum of the numbers is a multiple of p(0 is also count as a multiple of p). Since the answer is very large, you only need to output the answer modulo 109+7
+
+ 
+
+Input
+The first line contains one integer T(1¡ÜT¡Ü10) - the number of test cases. 
+T test cases follow. 
+The first line contains two positive integers n,p(1¡Ün,p¡Ü1000) 
+The second line contains n integers a1,a2,...an(ai¡Ü109). 
+ 
+
+Output
+For each testcase print a integer, the answer.
+ 
+
+Sample Input
+1
+2 3
+1 2
+ 
+
+Sample Output
+2
+
+Hint
+2 choice choose none and choose all.
+ 
+
+Source
+BestCoder Round #56 (div.2) 
+ 

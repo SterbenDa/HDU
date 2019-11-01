@@ -1,0 +1,28 @@
+速算24点
+Time Limit 20001000 MS (JavaOthers)    Memory Limit 6553632768 K (JavaOthers)
+Total Submission(s) 3770    Accepted Submission(s) 927
+
+
+Problem Description
+速算24点相信绝大多数人都玩过。就是随机给你四张牌，包括A(1),2,3,4,5,6,7,8,9,10,J(11),Q(12),K(13)。要求只用'+','-','',''运算符以及括号改变运算顺序，使得最终运算结果为24(每个数必须且仅能用一次)。游戏很简单，但遇到无解的情况往往让人很郁闷。你的任务就是针对每一组随机产生的四张牌，判断是否有解。我们另外规定，整个计算过程中都不能出现小数。
+
+ 
+
+Input
+每组输入数据占一行，给定四张牌。
+
+ 
+
+Output
+每一组输入数据对应一行输出。如果有解则输出Yes，无解则输出No。
+
+ 
+
+Sample Input
+A 2 3 6
+3 3 8 8
+ 
+
+Sample Output
+Yes
+No

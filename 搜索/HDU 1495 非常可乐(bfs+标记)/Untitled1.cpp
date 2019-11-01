@@ -1,0 +1,187 @@
+#include<iostream> 
+#include<stdio.h> 
+#include<string.h> 
+#include<queue> 
+using namespace std; 
+int vist[105][105][105],a,b,c; 
+struct node 
+{ 
+    int a,b,c; 
+    int step; 
+}s[105]; 
+int sum=0; 
+void bfs() 
+{ 
+    queue<node>q; 
+    memset(vist,0,sizeof(vist)); 
+    node p1; 
+    p1.a=a; 
+    p1.b=0; 
+    p1.c=0; 
+    p1.step=0; 
+    q.push(p1); 
+    vist[p1.a][0][0]=1; 
+    while(!q.empty()) 
+    { 
+        p1=q.front(); 
+        q.pop(); 
+        if((p1.a==a/2&&p1.b==a/2)||(p1.a==a/2&&p1.c==a/2)||(p1.b==a/2&&p1.c==a/2)) 
+        { 
+            printf("%d\n",p1.step); 
+            return; 
+        } 
+        node p2;     
+        if(p1.a!=0) 
+        { 
+            if(p1.a>b-p1.b) 
+            { 
+                p2.a=p1.a-(b-p1.b); 
+                p2.b=b; 
+                p2.c=p1.c; 
+                p2.step=p1.step+1; 
+            } 
+            else
+            { 
+                p2.a=0; 
+                p2.b=p1.b+p1.a; 
+                p2.c=p1.c; 
+                p2.step=p1.step+1; 
+            } 
+            if(!vist[p2.a][p2.b][p2.c]) 
+            { 
+                vist[p2.a][p2.b][p2.c]=1; 
+                q.push(p2); 
+            } 
+        } 
+          
+        if(p1.a!=0) 
+        { 
+            if(p1.a>c-p1.c) 
+            { 
+                p2.a=p1.a-(c-p1.c); 
+                p2.b=p1.b; 
+                p2.c=c; 
+                p2.step=p1.step+1; 
+            } 
+            else
+            { 
+                p2.a=0; 
+                p2.b=p1.b; 
+                p2.c=p1.c+p1.a; 
+                p2.step=p1.step+1; 
+            } 
+            if(!vist[p2.a][p2.b][p2.c]) 
+            { 
+                vist[p2.a][p2.b][p2.c]=1; 
+                q.push(p2); 
+            } 
+        } 
+          
+        if(p1.b!=0) 
+        { 
+            if(p1.b>a-p1.a) 
+            { 
+                p2.b=p1.b-(a-p1.a); 
+                p2.a=a; 
+                p2.c=p1.c; 
+                p2.step=p1.step+1; 
+            } 
+            else
+            { 
+                p2.b=0; 
+                p2.a=p1.a+p1.b; 
+                p2.c=p1.c; 
+                p2.step=p1.step+1; 
+            } 
+            if(!vist[p2.a][p2.b][p2.c]) 
+            { 
+                vist[p2.a][p2.b][p2.c]=1; 
+                q.push(p2); 
+            } 
+        } 
+          
+        if(p1.b!=0) 
+        { 
+            if(p1.b>c-p1.c) 
+            { 
+                p2.b=p1.b-(c-p1.c); 
+                p2.a=p1.a; 
+                p2.c=c; 
+                p2.step=p1.step+1; 
+            } 
+            else
+            { 
+                p2.b=0; 
+                p2.a=p1.a; 
+                p2.c=p1.c+p1.b; 
+                p2.step=p1.step+1; 
+            } 
+            if(!vist[p2.a][p2.b][p2.c]) 
+            { 
+                vist[p2.a][p2.b][p2.c]=1; 
+                q.push(p2); 
+            } 
+        } 
+          
+        if(p1.c!=0) 
+        { 
+            if(p1.c>a-p1.a) 
+            { 
+                p2.c=p1.c-(a-p1.a); 
+                p2.a=a; 
+                p2.b=p1.b; 
+                p2.step=p1.step+1; 
+            } 
+            else
+            { 
+                p2.c=0; 
+                p2.a=p1.a+p1.c; 
+                p2.b=p1.b; 
+                p2.step=p1.step+1; 
+            } 
+            if(!vist[p2.a][p2.b][p2.c]) 
+            { 
+                vist[p2.a][p2.b][p2.c]=1; 
+                q.push(p2); 
+            } 
+        } 
+          
+        if(p1.c!=0) 
+        { 
+            if(p1.c>b-p1.b) 
+            { 
+                p2.c=p1.c-(b-p1.b); 
+                p2.a=p1.a; 
+                p2.b=b; 
+                p2.step=p1.step+1; 
+            } 
+            else
+            { 
+                p2.c=0; 
+                p2.a=p1.a; 
+                p2.b=p1.b+p1.c; 
+                p2.step=p1.step+1; 
+            } 
+            if(!vist[p2.a][p2.b][p2.c]) 
+            { 
+                vist[p2.a][p2.b][p2.c]=1; 
+                q.push(p2); 
+            } 
+        } 
+    } 
+    printf("NO\n"); 
+} 
+int main() 
+{ 
+    while(scanf("%d%d%d",&a,&b,&c)>0&&(a+b+c)) 
+    { 
+        if(a%2==1) 
+        { 
+            printf("NO\n"); 
+            continue; 
+        } 
+        bfs(); 
+    } 
+    return 0; 
+} 
+

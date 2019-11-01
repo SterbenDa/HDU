@@ -1,0 +1,47 @@
+Queue
+Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 65536/65536 K (Java/Others)
+Total Submission(s): 735    Accepted Submission(s): 395
+
+
+Problem Description
+N people numbered from 1 to N are waiting in a bank for service. They all stand in a queue, but the queue never moves. It is lunch time now, so they decide to go out and have lunch first. When they get back, they don¡¯t remember the exact order of the queue. Fortunately, there are some clues that may help.
+Every person has a unique height, and we denote the height of the i-th person as hi. The i-th person remembers that there were ki people who stand before him and are taller than him. Ideally, this is enough to determine the original order of the queue uniquely. However, as they were waiting for too long, some of them get dizzy and counted ki in a wrong direction. ki could be either the number of taller people before or after the i-th person.
+Can you help them to determine the original order of the queue?
+
+ 
+
+Input
+The first line of input contains a number T indicating the number of test cases (T¡Ü1000).
+Each test case starts with a line containing an integer N indicating the number of people in the queue (1¡ÜN¡Ü100000). Each of the next N lines consists of two integers hi and ki as described above (1¡Ühi¡Ü109,0¡Üki¡ÜN?1). Note that the order of the given hi and ki is randomly shuffled.
+The sum of N over all test cases will not exceed 106
+
+ 
+
+Output
+For each test case, output a single line consisting of ¡°Case #X: S¡±. X is the test case number starting from 1. S is people¡¯s heights in the restored queue, separated by spaces. The solution may not be unique, so you only need to output the smallest one in lexicographical order. If it is impossible to restore the queue, you should output ¡°impossible¡± instead.
+ 
+
+Sample Input
+3
+3
+10 1
+20 1
+30 0
+3
+10 0
+20 1
+30 0
+3
+10 0
+20 0
+30 1
+ 
+
+Sample Output
+Case #1: 20 10 30
+Case #2: 10 20 30
+Case #3: impossible
+ 
+
+Source
+2015 ACM/ICPC Asia Regional Hefei Online 

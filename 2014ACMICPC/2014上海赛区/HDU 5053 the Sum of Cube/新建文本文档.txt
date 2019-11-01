@@ -1,0 +1,31 @@
+the Sum of Cube
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
+Total Submission(s): 1746    Accepted Submission(s): 694
+
+
+Problem Description
+A range is given, the begin and the end are both integers. You should sum the cube of all the integers in the range.
+ 
+
+Input
+The first line of the input is T(1 <= T <= 1000), which stands for the number of test cases you need to solve.
+Each case of input is a pair of integer A,B(0 < A <= B <= 10000),representing the range[A,B].
+ 
+
+Output
+For each test case, print a line ¡°Case #t: ¡±(without quotes, t means the index of the test case) at the beginning. Then output the answer ¨C sum the cube of all the integers in the range.
+ 
+
+Sample Input
+2
+1 3
+2 5
+ 
+
+Sample Output
+Case #1: 36
+Case #2: 224
+ 
+
+Source
+2014 ACM/ICPC Asia Regional Shanghai Online 

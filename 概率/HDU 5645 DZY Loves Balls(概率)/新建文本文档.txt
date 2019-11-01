@@ -1,0 +1,45 @@
+DZY Loves Balls
+Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 262144/262144 K (Java/Others)
+Total Submission(s): 660    Accepted Submission(s): 388
+
+
+Problem Description
+DZY loves playing balls.
+
+He has n balls in a big box. On each ball there is an integer written.
+
+One day he decides to pick two balls from the box. First he randomly picks a ball from the box, and names it A. Next, without putting A back into the box, he randomly picks another ball from the box, and names it B.
+
+If the number written on A is strictly greater than the number on B, he will feel happy.
+
+Now you are given the numbers on each ball. Please calculate the probability that he feels happy.
+ 
+
+Input
+First line contains t denoting the number of testcases.
+
+t testcases follow. In each testcase, first line contains n, second line contains n space-separated positive integers ai, denoting the numbers on the balls.
+
+(1¡Üt¡Ü300,2¡Ün¡Ü300,1¡Üai¡Ü300)
+ 
+
+Output
+For each testcase, output a real number with 6 decimal places. 
+
+ 
+
+Sample Input
+2
+3
+1 2 3
+3
+100 100 100
+ 
+
+Sample Output
+0.500000
+0.000000
+ 
+
+Source
+BestCoder Round #76 (div.2) 

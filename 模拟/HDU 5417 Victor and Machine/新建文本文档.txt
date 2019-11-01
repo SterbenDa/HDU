@@ -1,0 +1,37 @@
+Victor and Machine
+Time Limit 20001000 MS (JavaOthers)    Memory Limit 13107265536 K (JavaOthers)
+Total Submission(s) 169    Accepted Submission(s) 86
+
+
+Problem Description
+Victor has a machine. When the machine starts up, it will pop out a ball immediately. After that, the machine will pop out a ball every w seconds. However, the machine has some flaws, every time after x seconds of process the machine has to turn off for y seconds for maintenance work. At the second the machine will be shut down, it may pop out a ball. And while it's off, the machine will pop out no ball before the machine restart.
+
+Now, at the 0 second, the machine opens for the first time. Victor wants to know when the n-th ball will be popped out. Could you tell him
+ 
+
+Input
+The input contains several test cases, at most 100 cases.
+
+Each line has four integers x, y, w and n. Their meanings are shown above¡£
+
+1¡Üx,y,w,n¡Ü100.
+ 
+
+Output
+For each test case, you should output a line contains a number indicates the time when the n-th ball will be popped out.
+ 
+
+Sample Input
+2 3 3 3
+98 76 54 32
+10 9 8 100
+ 
+
+Sample Output
+10
+2664
+939
+ 
+
+Source
+BestCoder Round #52 (div.2) 
